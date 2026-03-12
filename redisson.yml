@@ -1,0 +1,31 @@
+singleServerConfig:
+  address: "redis://localhost:6379"
+  connectionMinimumIdleSize: 5
+  connectionPoolSize: 50
+  idleConnectionTimeout: 10000
+  connectTimeout: 10000
+  timeout: 3000
+  retryAttempts: 3
+  retryInterval: 1500
+#  ```
+
+#Your resources folder now has exactly two files: `application.yml` and `redisson.yml`.
+
+---
+
+## STEP 4 — CREATE THE PACKAGES
+
+#  In the left Project panel, navigate to `src/main/java/com/ticketbooking/`.
+  
+#  Right-click `ticketbooking` → New → Package.
+
+
+#After this your java folder looks like:
+#  ```
+#  com/ticketbooking/
+#  ├── TicketBookingApplication.java
+#  ├── config/
+#  ├── controller/
+#  ├── entity/
+#  ├── repository/
+#  └── service/
