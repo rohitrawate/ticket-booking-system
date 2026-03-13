@@ -10,7 +10,7 @@ import org.springframework.data.repository.query.Param;
 public interface TicketRepository extends JpaRepository<Ticket, Long> {
 
     @Modifying
-    @Transactional
+//    @Transactional
     @Query("UPDATE Ticket t SET t.soldCount = t.soldCount + :qty WHERE t.id = :id")
     int incrementSoldCount(@Param("id") Long id, @Param("qty") int qty);
 }
